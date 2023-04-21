@@ -102,6 +102,7 @@ export default function JoinUsPage() {
                         <input type="text" className="special_req" name="special_req" />
                     </div>
                     <input type="submit" className="submit" value="Get Updates"/>
+                    <input type="submit" className="submit_bottom" value="Get Updates"/>
                 </form>
             </div>
             <p className="res-msg" style={{color}}>{msg ? msg : <>&nbsp;</> }</p>

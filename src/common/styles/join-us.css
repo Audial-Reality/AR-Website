@@ -232,7 +232,6 @@ form {
     right: 0;
     background: linear-gradient(195deg,#D1CFFF,#63618d);
     color: #001949;
-    /* text-transform: uppercase; */
     letter-spacing: 1px;
     cursor: pointer;
     transition: background-color .22s ease;
@@ -241,6 +240,21 @@ form {
     font-weight: bold;
     border-radius: 5px !important;
     border: 0px solid;
+    font-size: var(--small-text);
+    
+}
+.join-us__form .submit_bottom {
+    background: linear-gradient(195deg,#D1CFFF,#63618d);
+    color: #001949;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color .22s ease;
+    padding: 10px 10px;
+    margin-top: 15px;
+    height: 40%;
+    width: 100%;
+    font-weight: bold;
+    border-radius: 5px !important;
     font-size: var(--small-text);
     
 }
@@ -372,8 +386,9 @@ form {
     }
 
     .join-us-para-box {
-        width: 350px;
-
+        width: 100vw;
+        padding: 5px;
+        text-align: center;
     }
 
     .join-us__form .submit {
@@ -444,25 +459,58 @@ form {
     .bg-container {
         height: 45vh;
     }
+
+}
+
+@media all and (min-width: 821px){
+    .join-us__form .submit_bottom {
+        display: none;
+    }
 }
 
 /* iPhone SE and iPhone XR and iPhone 12 Pro and Pixel 5 and Samsung Galaxy S8+ and Samsung Galaxy S20 Ultra and iPad Air*/
 @media all and (max-width: 820px) and (max-height: 1180px){
-
-    .join-us-page-wrapper{
-
+    .join-us-page-wrapper {
         font-size: 13px;
     }
-
+    .join-us__form .submit {
+        display: none;
+    }
     .join-us-logo-box {
-
         margin-bottom: 10px;
     }
 
     .bg-container {
         height: 45vh;
     }
-
+    .join-us-input-padding {
+        width: 100%;
+        height: auto;
+        padding: 0px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+/* Choose to display text */
+@media all and (max-height: 700px){
+    .join-us-info-box {
+        display: none;
+    }
 }
 
 
+
+/* Galaxy Fold & smaller */
+@media all and (max-width: 315px){
+    .join-us-page-wrapper{
+        font-size: 10px;
+    }
+    .join-us__form .submit {
+        display: none;
+    }
+    .join-us-form-box {
+        height: auto;
+        width: 200px;
+    }
+
+}
