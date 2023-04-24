@@ -25,9 +25,6 @@
   /*---------------------------------------------*/
   /*             Other Text Constants            */
   /*---------------------------------------------*/
-  /* DEV-TASK(DONE) [Easy]: Change the Following to be em instead of pixels
-     once this is done we can change a single font variable and 
-     it will be able to adjust all text on the webpage at once! */
     --base-font-size: 16.5px;
 
     --massive-text: 8.875em;
@@ -289,10 +286,6 @@ body::-webkit-scrollbar { display: none; }
   margin-right: 10px;
   padding: 0px 25px;
 }
-
-
-/* DEV-TASK (DONE) [Novice]: Delete this entire file completely from the 
-application and make sure the application still runs properly */
 
 .main {
   display: flex;

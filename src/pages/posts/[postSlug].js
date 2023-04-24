@@ -11,7 +11,7 @@ import { BsPerson, BsCalendar } from 'react-icons/bs'
 //import styles from "../../styles/Home.module.css";
 
 import WebpageWrapper from '@/WebpageWrapper'
-import Banner from '@/images/post-banner-two.png';
+import Banner from '@/images/post-banner-two(new).png';
 
 import DOMPurify from 'isomorphic-dompurify';
 

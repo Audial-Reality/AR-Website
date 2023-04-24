@@ -47,7 +47,7 @@ export default function Footer(props) {
                     <div className="flex">&nbsp; {FooterText.Bottom.PrivacyPolicy} &nbsp;</div> | 
                     <div className="flex">&nbsp; {FooterText.Bottom.Year}{FooterText.Bottom.SoundscapeText}</div>
                 </div>
-                  <div className={`${styles['footer-bottom-content']}`}>
+                <div className={`${styles['footer-bottom-content']}`}>
                     <p>
                         {FooterText.Bottom.An}
                         <Link href="https://new.rcos.io/" style={{textDecoration: 'none', color: 'red'/*'#4a88e8'*/}}>
