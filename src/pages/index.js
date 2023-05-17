@@ -17,21 +17,21 @@ import { getApolloClient } from "../lib/apollo-client";
 
 
 export default function Home({ page, posts }) {
-  console.log(posts)
   return (
       <WebpageWrapper>
         <HeroSection />
         <FeaturesSection />
         <SponsorSection />
         <SupportSection />
-        <BlogSection  allPosts={posts} />
+        {/*<BlogSection  allPosts={posts} />*/}
       </WebpageWrapper>
   )
 }
 
 
 export async function getStaticProps({ locale }) {
-  try {
+  return { props: { page: null, posts: null } }
+  /*try {
     const apolloClient = getApolloClient();
     
     const language = locale.toUpperCase();
@@ -97,5 +97,5 @@ export async function getStaticProps({ locale }) {
     };
   } catch(error) {
     return { props: { } }
-  }
+  }*/
 }
