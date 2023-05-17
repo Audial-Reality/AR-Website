@@ -278,7 +278,7 @@ form {
 
 .res-msg {
        /* padding-top: 5px; */
-       margin-top: 10px !important;
+       padding-top: 10px !important;
        margin-bottom: 12.5px;
        font-style: italic;
        /* width: 100%; */
