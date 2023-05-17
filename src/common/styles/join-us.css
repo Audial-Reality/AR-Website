@@ -21,7 +21,7 @@
 
 .bg-container {
     position: absolute;
-    background-image: url("../../assets/images/join-us-bg.svg");
+    background-image: url("../../assets/images/join-us-bg(new).png");
     background-repeat: repeat-x;
     background-position: center bottom;
     background-size: auto 100%;
@@ -123,7 +123,23 @@
     z-index: 999999;
 }
 
-.donate-button {
+/* RCOS link styling */
+.join-us-footer {
+    height: auto;
+    width: 600px;
+    color: rgba(255, 255, 255, var(--high-emphasis-text));
+
+    text-align: center;
+
+    margin-bottom: 10px;
+    font-size: var(--smallest-text);
+    position: absolute;
+    bottom: 0px;
+
+    z-index: 999999;
+}
+
+.donate-button{
     z-index: 999999;
 
     text-decoration: none;
@@ -216,7 +232,6 @@ form {
     right: 0;
     background: linear-gradient(195deg,#D1CFFF,#63618d);
     color: #001949;
-    /* text-transform: uppercase; */
     letter-spacing: 1px;
     cursor: pointer;
     transition: background-color .22s ease;
@@ -225,6 +240,21 @@ form {
     font-weight: bold;
     border-radius: 5px !important;
     border: 0px solid;
+    font-size: var(--small-text);
+    
+}
+.join-us__form .submit_bottom {
+    background: linear-gradient(195deg,#D1CFFF,#63618d);
+    color: #001949;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color .22s ease;
+    padding: 10px 10px;
+    margin-top: 15px;
+    height: 40%;
+    width: 100%;
+    font-weight: bold;
+    border-radius: 5px !important;
     font-size: var(--small-text);
     
 }
@@ -270,7 +300,22 @@ form {
 @media all and (max-width: 775px) { 
     .join-us-form-box {
         width: 350px;
+        margin-bottom: 10px;
 
+    }
+
+    .join-us-page-wrapper{
+        font-size: 14px;
+    }
+
+    .res-msg{
+        padding-top: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-style: italic;
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
     
     .join-us-info-box {
@@ -302,8 +347,25 @@ form {
     
     }
 
+    /* RCOS link styling */
+    .join-us-footer {
+        height: auto;
+        width: 600px;
+        color: rgba(255, 255, 255, var(--high-emphasis-text));
+    
+        text-align: center;
+    
+        margin-bottom: 10px;
+        font-size: var(--smallest-text);
+
+        position: absolute;
+        bottom: 0px;
+    
+        z-index: 999999;
+    }
+
     .bg-container {
-        height: 30vh;
+        height: 45vh;
         
     }
 
@@ -311,9 +373,24 @@ form {
 
 @media all and (max-width: 400px) { 
 
-    .join-us-para-box {
-        width: 350px;
+    .join-us-page-wrapper{
+        font-size: 14px;
+    }
 
+    .res-msg{
+        padding-top: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-style: italic;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .join-us-para-box {
+        width: 100vw;
+        padding: 5px;
+        text-align: center;
     }
 
     .join-us__form .submit {
@@ -329,12 +406,13 @@ form {
     
         z-index: 999999;
     
-        margin-bottom: 25px
+        margin-bottom: 10px;
 
     }
     
     .join-us-info-box {
         width: 150px;
+        height: 60px;
 
     }
 
@@ -363,7 +441,78 @@ form {
     
     }
 
-    .bg-container {
-        height: 25vh;
+    /* RCOS link styling */
+    .join-us-footer {
+        height: auto;
+        width: 600px;
+        color: rgba(255, 255, 255, var(--high-emphasis-text));
+    
+        text-align: center;
+    
+        margin-bottom: 10px;
+        font-size: var(--smallest-text);
+
+        position: absolute;
+        bottom:0px;
+    
+        z-index: 999999;
     }
+
+    .bg-container {
+        height: 45vh;
+    }
+
+}
+
+@media all and (min-width: 821px){
+    .join-us__form .submit_bottom {
+        display: none;
+    }
+}
+
+/* iPhone SE and iPhone XR and iPhone 12 Pro and Pixel 5 and Samsung Galaxy S8+ and Samsung Galaxy S20 Ultra and iPad Air*/
+@media all and (max-width: 820px) and (max-height: 1180px){
+    .join-us-page-wrapper {
+        font-size: 13px;
+    }
+    .join-us__form .submit {
+        display: none;
+    }
+    .join-us-logo-box {
+        margin-bottom: 10px;
+    }
+
+    .bg-container {
+        height: 45vh;
+    }
+    .join-us-input-padding {
+        width: 100%;
+        height: auto;
+        padding: 0px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+/* Choose to display text */
+@media all and (max-height: 700px){
+    .join-us-info-box {
+        display: none;
+    }
+}
+
+
+
+/* Galaxy Fold & smaller */
+@media all and (max-width: 315px){
+    .join-us-page-wrapper{
+        font-size: 10px;
+    }
+    .join-us__form .submit {
+        display: none;
+    }
+    .join-us-form-box {
+        height: auto;
+        width: 200px;
+    }
+
 }
