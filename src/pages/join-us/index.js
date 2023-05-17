@@ -57,10 +57,12 @@ export default function JoinUsPage() {
             if( response.msg ){
                 setColor(response.color);
                 setMsg(response.msg);
+                toast(response.msg);
             } 
         } catch (error) {
             setColor('red');
             setMsg(`Error: ${error.msg}`);
+            toast(error.msg);
             
         }     
     }, [requestAddToEmailList]);
@@ -78,6 +80,7 @@ export default function JoinUsPage() {
             }
         });
     }, []);
+
     function handleClick(){
         window.open(donationLink,'_blank')
     }

@@ -13,7 +13,7 @@ export default function App({ Component, pageProps }) {
     case 'production': {
       return (
         <>
-          <Toaster position="bottom-center" reverseOrder={false} />
+          <Toaster position="bottom-center" />
           { ( PUBLIC_PAGES ).includes(router.pathname) ? (
             <Component {...pageProps} /> ) : ( <RedirectToJoinUs />)}
         </>
@@ -22,7 +22,7 @@ export default function App({ Component, pageProps }) {
     default: { 
       return (   
         <>
-           <Toaster position="bottom-center" reverseOrder={false} />
+           <Toaster position="bottom-center"  />
           { ( PUBLIC_PAGES ).includes(router.pathname) ? (
             <Component {...pageProps} /> ) : ( <RedirectToJoinUs />)}
         </>
