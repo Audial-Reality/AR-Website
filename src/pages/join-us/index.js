@@ -33,14 +33,12 @@ export default function JoinUsPage() {
                 const data = await response.json();
 
                 if( data.status >= 400){
-                    console.log(data);
                     return { msg: `Error ${data.status}: ${data.title}`, color: "red"  }
                 } else {
                     return { msg: "You have been added to the email list", color: "green"  }
                 }    
             }
         } catch (error) {
-            console.log(error);
             return { msg: `Error: ${error.msg}`, color: 'red'};
         }
     }, []);
@@ -61,7 +59,6 @@ export default function JoinUsPage() {
                 setMsg(response.msg);
             } 
         } catch (error) {
-            console.log(error.msg);
             setColor('red');
             setMsg(`Error: ${error.msg}`);
             
