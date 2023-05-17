@@ -16,6 +16,7 @@ import { gql } from "@apollo/client";
 import { getApolloClient } from "../lib/apollo-client";
 
 
+
 export default function Home({ page, posts }) {
   return (
       <WebpageWrapper>
@@ -23,7 +24,7 @@ export default function Home({ page, posts }) {
         <FeaturesSection />
         <SponsorSection />
         <SupportSection />
-        {/*<BlogSection  allPosts={posts} />*/}
+        {<BlogSection  allPosts={posts} />}
       </WebpageWrapper>
   )
 }

@@ -4,7 +4,7 @@ import { donationLink } from '@/_Constants';
 import Image from 'next/image'
 import SVG from '@/images/pedestrian_crossing.svg'
 import Link from 'next/link';
-
+import toast, { Toaster } from 'react-hot-toast';
 
 export default function JoinUsPage() {
     /* TASK: (DONE) When text is autofilled BG of input turns white when it needs to be transparent */ 
@@ -64,6 +64,7 @@ export default function JoinUsPage() {
             console.log(error.msg);
             setColor('red');
             setMsg(`Error: ${error.msg}`);
+            
         }     
     }, [requestAddToEmailList]);
     
